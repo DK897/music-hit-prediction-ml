@@ -4,15 +4,8 @@ scipy
 scikit-learn>=1.1
 matplotlib
 seaborn
-librosa>=0.8
-soundfile
-joblib
-tqdm
 tensorflow-cpu>=2.9
 pyyaml
-shap
-imbalanced-learn
 lightgbm
-yt-dlp
-billboard.py
-mlflow
+tqdm
+joblib

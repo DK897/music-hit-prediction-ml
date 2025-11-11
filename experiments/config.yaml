@@ -1,20 +1,26 @@
 dataset:
   path: data/processed/dataset.csv
   seed: 42
-  test_fraction: 0.28
-  label_column: label
+  test_fraction: 0.25
+  label_column: target
 
 training:
-  cv_folds: 5
-  random_state: 42
   use_pca: true
   pca_variance: 0.95
 
 models:
+  logistic:
+    C: 1.0
+    l1_ratio: 0.5
   rf:
     n_estimators: 300
+  gb:
+    n_estimators: 300
+  svm:
+    probability: true
   nn:
-    epochs: 80
+    epochs: 40
     batch_size: 32
     hidden_sizes: [256, 128]
     dropout: 0.45
+    l2_reg: 0.0001
