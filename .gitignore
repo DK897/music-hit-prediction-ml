@@ -1,12 +1,6 @@
-venv/
 __pycache__/
 *.pyc
-*.pkl
-*.h5
-*.wav
-*.mp3
-*.csv
-reports/visuals/
-.ipynb_checkpoints/
+venv/
+.env
+results/
 .DS_Store
-

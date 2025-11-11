@@ -1,0 +1,20 @@
+dataset:
+  path: data/processed/dataset.csv
+  seed: 42
+  test_fraction: 0.28
+  label_column: label
+
+training:
+  cv_folds: 5
+  random_state: 42
+  use_pca: true
+  pca_variance: 0.95
+
+models:
+  rf:
+    n_estimators: 300
+  nn:
+    epochs: 80
+    batch_size: 32
+    hidden_sizes: [256, 128]
+    dropout: 0.45
